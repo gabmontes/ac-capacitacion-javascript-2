@@ -1,5 +1,7 @@
 # Capacitación JavaScript - Parte 2
 
+Actualización de conocimientos de JavaScript, técnicas y herramientas de desarrollo front-end.
+
 ## Temario
 
 - JavaScript:
@@ -21,3 +23,9 @@
 - Webpack 2 (1 clase)
 - SASS (1 clase)
 - Git (1 clase)
+
+## Requisitos
+
+- Atom, Visual Studio Code, SublimeText u otro editor
+- Google Chrome 58 o superior
+- Node.JS
