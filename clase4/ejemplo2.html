@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo 2</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    const NotReactDOM = {
+      render (component, element) {
+        element.innerHTML = component
+      }
+    }
+
+    NotReactDOM.render(
+      `<h1>Hello world!</h1>`,
+      document.getElementById('root')
+    )
+  </script>
+</body>
+</html>

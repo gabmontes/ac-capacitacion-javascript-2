@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo 1</title>
+</head>
+<body>
+  <div id="content"></div>
+  <script>
+    var state = {
+      header: 'Hello World'
+    }
+    function render(state) {
+      document.getElementById('content').innerHTML = `<h1>${state.header}</h1>`
+    }
+    render(state)
+  </script>
+</body>
+</html>
