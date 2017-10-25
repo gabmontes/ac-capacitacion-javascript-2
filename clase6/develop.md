@@ -3,3 +3,5 @@
 ## Gabriel
 
 Works on my machine!!
+
+## git reset --hard HEAD
