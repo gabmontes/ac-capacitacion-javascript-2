@@ -7,8 +7,10 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      searching: true,
-      people: []
+      searching: 'people',
+      people: [],
+      selectedPerson: null,
+      person: null
     }
   }
 
@@ -17,7 +19,7 @@ class App extends Component {
 
     swapi.getPeople().then(function (people) {
       component.setState({
-        searching: false,
+        searching: 'none',
         people: people.results
       })
     })

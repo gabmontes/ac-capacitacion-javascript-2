@@ -1,0 +1,33 @@
+{
+  searching: "people", // or "person" or "none"
+  selectedPerson: "ID", // or null
+  people: [...],
+  person: {...} // or null
+}
+
+// pantalla A
+{
+  searching: 'people',
+  ... // no me importa el resto
+}
+// pantalla B
+{
+  searching: 'none',
+  people: [...],
+  selectedPerson: null
+  person // no me importa
+}
+// pantalla C
+{
+  searching: 'person',
+  people: [...],
+  selectedPerson: 'ID',
+  person: null
+}
+// pantalla D
+{
+  searching: 'none',
+  people: [...],
+  selectedPerson: 'ID',
+  person: {...}
+}
