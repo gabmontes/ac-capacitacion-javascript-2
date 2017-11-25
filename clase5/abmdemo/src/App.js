@@ -12,6 +12,8 @@ class App extends Component {
       selectedPerson: null,
       person: null
     }
+
+    this.onPersonChanged = this.onPersonChanged.bind(this)
   }
 
   componentWillMount() {
@@ -25,8 +27,31 @@ class App extends Component {
     })
   }
 
+  onPersonChanged(url) {
+    const component = this
+
+    if (url === 'none') {
+      component.setState({
+        selectedPerson: null,
+        searching: 'none'
+      })
+      return
+    }
+
+    component.setState({
+      selectedPerson: url,
+      searching: 'person'
+    })
+    swapi.get(url).then(function (person) {
+      component.setState({
+        searching: 'none',
+        person
+      })
+    })
+  }
+
   render() {
-    return <Home {...this.state} />
+    return <Home {...this.state} onPersonChanged={this.onPersonChanged} />
   }
 }
 
